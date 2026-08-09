@@ -1,0 +1,52 @@
+/* Brand, chart, and status tokens — see brand-guidelines.md */
+:root {
+  /* Brand (UI chrome) */
+  --brand-bg: #f8fafc;
+  --brand-surface: #ffffff;
+  --brand-surface-muted: #f1f5f9;
+  --brand-border: #e2e8f0;
+  --brand-text: #0f172a;
+  --brand-text-muted: #64748b;
+  --brand-accent: #334155;
+  --brand-accent-strong: #1e293b;
+
+  /* Chart (neutral — not status) */
+  --chart-1: #1e293b;
+  --chart-2: #334155;
+  --chart-3: #475569;
+  --chart-4: #64748b;
+  --chart-5: #94a3b8;
+  --chart-6: #cbd5e1;
+
+  /* Status (reporting only) */
+  --status-success: #16a34a;
+  --status-warning: #d97706;
+  --status-danger: #dc2626;
+  --status-info: #2563eb;
+  --status-neutral: #6b7280;
+  --status-review: #9333ea;
+
+  --status-success-bg: #f0fdf4;
+  --status-warning-bg: #fffbeb;
+  --status-danger-bg: #fef2f2;
+
+  /* Trello labels (distinct from status palette) */
+  --label-1: #0d9488;
+  --label-2: #4f46e5;
+  --label-3: #db2777;
+  --label-4: #0891b2;
+  --label-5: #7c2d12;
+  --label-6: #4338ca;
+  --label-7: #be185d;
+  --label-8: #0369a1;
+  --label-9: #a21caf;
+  --label-10: #0f766e;
+  --label-11: #5b21b6;
+  --label-12: #c2410c;
+
+  /* Shared */
+  --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 4px 16px rgba(15, 23, 42, 0.04);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --font: "Inter", system-ui, -apple-system, sans-serif;
+}
