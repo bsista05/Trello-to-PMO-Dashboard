@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Dashboard | Sista</title>
+  <link rel="stylesheet" href="styling/styles.css">
+</head>
+<body>
+  <div class="accent-bar" aria-hidden="true"></div>
+
+  <div class="app">
+    <header class="header">
+      <div class="header__top">
+        <div class="header__brand">
+          <span class="header__logo">Sista</span>
+        </div>
+
+        <div class="header__title-block">
+          <h1 class="header__title">Project Management Dashboard</h1>
+          <p class="header__subtitle">This dashboard fetches data from Trello and displays relevant columns</p>
+        </div>
+
+        <div class="header__meta">
+          <p class="header__updated" id="last-updated">Loading…</p>
+        </div>
+      </div>
+
+      <div class="header__status-summary" id="header-status-summary" aria-label="Tasks per status"></div>
+    </header>
+
+    <section class="stats" id="stats" aria-label="Board statistics"></section>
+
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Dashboard views">
+      <button class="tabs__btn tabs__btn--active" role="tab" aria-selected="true" data-tab="board">Board</button>
+      <button class="tabs__btn" role="tab" aria-selected="false" data-tab="activities">Detailed Activities</button>
+      <button class="tabs__btn" role="tab" aria-selected="false" data-tab="summary">Summary</button>
+      <button class="tabs__btn" role="tab" aria-selected="false" data-tab="deliverables">Deliverables</button>
+      <button class="tabs__btn" role="tab" aria-selected="false" data-tab="weekly">Weekly Status Report</button>
+    </nav>
+
+    <main class="content">
+      <section class="panel panel--active" id="panel-board" role="tabpanel" aria-label="Kanban board">
+        <div class="board" id="board">
+          <div class="board__loading" id="loading">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Loading your Trello board…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-activities" role="tabpanel" aria-label="Detailed Activities" hidden>
+        <div id="activities-table"></div>
+      </section>
+
+      <section class="panel" id="panel-summary" role="tabpanel" aria-label="Summary" hidden>
+        <div class="summary-grid" id="summary-content"></div>
+      </section>
+
+      <section class="panel" id="panel-deliverables" role="tabpanel" aria-label="Deliverables" hidden>
+        <div class="table-wrap" id="deliverables-table"></div>
+      </section>
+
+      <section class="panel" id="panel-weekly" role="tabpanel" aria-label="Weekly Status Report" hidden>
+        <div id="weekly-report"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Data sourced from Trello · Refresh via <code>run-website.bat</code> or <code>python scripts/fetch-trello.py</code></p>
+    </footer>
+  </div>
+
+  <script src="js/app.js?v=20260807b"></script>
+</body>
+</html>
