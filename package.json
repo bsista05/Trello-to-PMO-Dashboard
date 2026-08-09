@@ -1,0 +1,11 @@
+{
+  "name": "trello-project-management-dashboard",
+  "version": "1.0.0",
+  "description": "Trello - Project Management Dashboard",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-trello.js",
+    "fetch:py": "python scripts/fetch-trello.py",
+    "serve": "npx serve ."
+  }
+}
