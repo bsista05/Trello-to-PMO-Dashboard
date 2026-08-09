@@ -1,0 +1,106 @@
+{
+  "name": "Product Launch (sample)",
+  "id": "sample",
+  "url": "https://trello.com",
+  "fetchedAt": "2026-08-06T12:00:00.000Z",
+  "members": [
+    { "id": "m1", "fullName": "Alex Chen", "username": "alexc" },
+    { "id": "m2", "fullName": "Sam Rivera", "username": "samr" }
+  ],
+  "customFields": [
+    { "id": "cf-d", "name": "D", "type": "text", "idModel": "sample", "modelType": "board" }
+  ],
+  "commentsByCardId": {
+    "c1": [{ "date": "2026-08-04T09:00:00.000Z", "text": "Scope approved by stakeholders." }],
+    "c4": [
+      { "date": "2026-08-06T14:00:00.000Z", "text": "Re-test scheduled for next week." },
+      { "date": "2026-08-05T11:00:00.000Z", "text": "Waiting on QA sign-off." }
+    ]
+  },
+  "completedAtByCardId": {
+    "c5": "2026-08-02T10:00:00.000Z"
+  },
+  "lists": [
+    { "id": "list-1", "name": "Not Started", "pos": 1 },
+    { "id": "list-2", "name": "In Progress", "pos": 2 },
+    { "id": "list-3", "name": "Under Review", "pos": 3 },
+    { "id": "list-4", "name": "Completed", "pos": 4 }
+  ],
+  "cards": [
+    {
+      "id": "c1",
+      "idShort": 101,
+      "name": "Define MVP scope",
+      "desc": "Align stakeholders on v1 features and success metrics.",
+      "due": "2026-08-10T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "list-1",
+      "idMembers": ["m1"],
+      "customFieldItems": [
+        { "idCustomField": "cf-d", "idModel": "c1", "modelType": "card", "value": { "text": "D-001" } }
+      ],
+      "url": "https://trello.com",
+      "pos": 1,
+      "labels": [{ "name": "Planning", "color": "blue" }]
+    },
+    {
+      "id": "c2",
+      "idShort": 102,
+      "name": "Design landing page",
+      "desc": "Hero, feature grid, and CTA sections.",
+      "due": "2026-08-05T17:00:00.000Z",
+      "dueComplete": false,
+      "dateCompleted": null,
+      "dateLastActivity": "2026-08-05T12:00:00.000Z",
+      "idList": "list-2",
+      "idMembers": ["m2"],
+      "url": "https://trello.com",
+      "pos": 1,
+      "labels": [{ "name": "Design", "color": "purple" }, { "name": "Urgent", "color": "red" }]
+    },
+    {
+      "id": "c3",
+      "idShort": 103,
+      "name": "Integrate Trello API",
+      "desc": "Fetch lists and cards; export to board.json.",
+      "due": null,
+      "dueComplete": false,
+      "idList": "list-2",
+      "idMembers": [],
+      "url": "https://trello.com",
+      "pos": 2,
+      "labels": [{ "name": "Dev", "color": "green" }]
+    },
+    {
+      "id": "c4",
+      "idShort": 104,
+      "name": "QA dashboard layout",
+      "desc": "Check responsive columns and card overflow.",
+      "due": "2026-08-15T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "list-3",
+      "idMembers": ["m1", "m2"],
+      "customFieldItems": [
+        { "idCustomField": "cf-d", "idModel": "c4", "modelType": "card", "value": { "text": "D-002" } }
+      ],
+      "url": "https://trello.com",
+      "pos": 1,
+      "labels": [{ "name": "QA", "color": "orange" }]
+    },
+    {
+      "id": "c5",
+      "idShort": 105,
+      "name": "Publish project plan",
+      "desc": "",
+      "due": "2026-08-01T17:00:00.000Z",
+      "dueComplete": true,
+      "dateCompleted": "2026-08-02T10:00:00.000Z",
+      "dateLastActivity": "2026-08-02T10:00:00.000Z",
+      "idList": "list-4",
+      "idMembers": ["m1"],
+      "url": "https://trello.com",
+      "pos": 1,
+      "labels": [{ "name": "Done", "color": "green" }]
+    }
+  ]
+}
