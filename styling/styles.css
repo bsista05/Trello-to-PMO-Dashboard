@@ -240,10 +240,13 @@ body {
   gap: 0.85rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
+  width: 100%;
 }
 
 .column {
-  flex: 0 0 280px;
+  flex: 1 1 0;
+  min-width: 280px;
+  width: 0;
   background: var(--brand-surface-muted);
   border: 1px solid var(--brand-border);
   border-top: 3px solid var(--column-color, var(--brand-accent));
@@ -1104,7 +1107,7 @@ body {
   }
 
   .column {
-    flex: 0 0 85vw;
+    min-width: 280px;
     max-height: none;
   }
 }
